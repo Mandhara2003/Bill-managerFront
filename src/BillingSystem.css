@@ -8,9 +8,21 @@ body {
 .billing-system-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 200px;
+}
+.details-box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.customer-details h2 {
+  color: #333;
+  margin-top: 0;
+}
 .item-details,
 .total-details {
   flex: 1;
@@ -76,19 +88,39 @@ body {
   background-color: #4c4faf;
   color: white;
 }
-                   
-.total-details .total {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #333;
+
+/* Your provided CSS styles */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
+
+.billing-system-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.item-details,
+.total-details {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (remaining styles from your provided CSS) */
 
 .action-buttons {
   margin-top: 20px;
 }
 
-.save-button,
-.search-button {
+.save-button {
   background-color: #008CBA;
   color: white;
   padding: 12px 20px;
@@ -99,7 +131,12 @@ body {
   transition: background-color 0.3s;
 }
 
-.save-button:hover,
-.search-button:hover {
+.save-button:hover {
   background-color: #0077a6;
+}
+
+.total-details .total {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
 }

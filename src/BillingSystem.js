@@ -31,11 +31,25 @@ const BillingSystem = () => {
         setItemCode('moye001');
         setPrice(100);
         break;
+      case 'bread':
+        setItemCode('BR001');
+        setPrice(30);
+        break;
+      case 'milk':
+        setItemCode('ML001');
+        setPrice(50);
+        break;
+      case 'eggs':
+        setItemCode('EG001');
+        setPrice(40);
+        break;
+      // Add more items here as needed
       default:
         setItemCode('');
         setPrice(0);
         break;
     }
+    
   };
 
   const addItem = () => {
@@ -113,16 +127,18 @@ const BillingSystem = () => {
 
   return (
     <div className="billing-system-container">
-      {/* Customer details */}
-      <div className="customer-details">
-        <h2>Customer Details</h2>
-        <div className="form-group">
-          <label>Customer Name:</label>
-          <input type="text" value={customerName} onChange={(e) => setCustomerName(e.target.value)} />
-        </div>
-        <div className="form-group">
-          <label>Mobile Number:</label>
-          <input type="text" value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)} />
+      {/* Box for Customer details */}
+      <div className="details-box">
+        <div className="customer-details">
+          <h2>Customer Details</h2>
+          <div className="form-group">
+            <label>Customer Name:</label>
+            <input type="text" value={customerName} onChange={(e) => setCustomerName(e.target.value)} />
+          </div>
+          <div className="form-group">
+            <label>Mobile Number:</label>
+            <input type="text" value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)} />
+          </div>
         </div>
       </div>
 
